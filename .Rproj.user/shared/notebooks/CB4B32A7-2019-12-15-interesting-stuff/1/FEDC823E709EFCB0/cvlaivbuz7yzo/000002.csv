@@ -1,0 +1,856 @@
+"0","install.packages(""reticulate"")
+"
+"2","also installing the dependencies ‘lattice’, ‘Matrix’
+
+"
+"2","trying URL 'https://cran.rstudio.com/src/contrib/lattice_0.20-38.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 359031 bytes (350 KB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 350 KB
+
+"
+"2","trying URL 'https://cran.rstudio.com/src/contrib/Matrix_1.2-18.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 1871705 bytes (1.8 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.8 MB
+
+"
+"2","trying URL 'https://cran.rstudio.com/src/contrib/reticulate_1.13.tar.gz'
+"
+"2","Content type 'application/x-gzip'"
+"2"," length 1477406 bytes (1.4 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 1.4 MB
+
+"
+"2","* installing *source* package ‘lattice’ ...
+"
+"2","** package ‘lattice’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG   -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefi"
+"1","x-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c init.c -o init.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG   -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefi"
+"1","x-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c threeDplot.c -o threeDplot.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Users/aliciaireland/opt/anaconda3/lib/R/lib -Wl,-dead_strip_dylibs -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/aliciaireland/opt/anaconda3/lib -L/Users/aliciaireland/opt/anaconda3/lib -o lattice.dylib init.o threeDplot.o -L/Users/aliciaireland/opt/anaconda3/lib/R/lib -lR -Wl,-framework -Wl,CoreFoundation
+"
+"2","ld: warning: -pie being ignored. It is only used when linking a main executable
+"
+"2","installing to /Users/aliciaireland/opt/anaconda3/lib/R/library/00LOCK-lattice/00new/lattice/libs
+"
+"2","** R
+"
+"2","** data
+"
+"2","*** moving datasets to lazyload DB
+"
+"2","** demo
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** checking absolute paths in shared objects and dynamic libraries
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (lattice)
+"
+"2","* installing *source* package ‘Matrix’ ...
+"
+"2","** package ‘Matrix’ successfully unpacked and MD5 sums checked
+"
+"2","** using staged installation
+"
+"2","** libs
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c CHMfactor.c -o CHMfactor.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c Csparse.c -o Csparse.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c TMatrix_as.c -o TMatrix_as.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c Tsparse.c -o Tsparse.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c init.c -o init.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c Mutils.c -o Mutils.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c chm_common.c -o chm_common.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c cs.c -o cs.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c cs_utils.c -o cs_utils.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dense.c -o dense.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dgCMatrix.c -o dgCMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dgTMatrix.c -o dgTMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dgeMatrix.c -o dgeMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dpoMatrix.c -o dpoMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dppMatrix.c -o dppMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dsCMatrix.c -o dsCMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dsyMatrix.c -o dsyMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dspMatrix.c -o dspMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dtCMatrix.c -o dtCMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dtTMatrix.c -o dtTMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dtrMatrix.c -o dtrMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c dtpMatrix.c -o dtpMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c factorizations.c -o factorizations.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ldense.c -o ldense.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c lgCMatrix.c -o lgCMatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c sparseQR.c -o sparseQR.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER -I./SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/c"
+"1","onda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c abIndex.c -o abIndex.o
+"
+"1","make[1]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/CHOLMOD'
+( cd Lib ; make clean )
+"
+"1","make[2]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/CHOLMOD/Lib'
+"
+"1","make[2]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/CHOLMOD/Lib'
+"
+"1","make[1]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/CHOLMOD'
+"
+"1","make[1]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/COLAMD'
+( cd Source ; make clean )
+"
+"1","make[2]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/COLAMD/Source'
+"
+"1","make[2]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/COLAMD/Source'
+"
+"1","make[1]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/COLAMD'
+"
+"1","make[1]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/AMD'
+( cd Source ; make clean )
+"
+"1","make[2]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/AMD/Source'
+"
+"1","make[2]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/AMD/Source'
+"
+"1","make[1]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/AMD'
+"
+"1","make[1]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/SuiteSparse_config'
+"
+"1","make[1]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/SuiteSparse_config'
+"
+"1","make[1]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/CHOLMOD'
+( cd Lib ; make -f ""/Users/aliciaireland/opt/anaconda3/lib/R/etc/Makeconf"" -f Makefile )
+"
+"1","make[2]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/CHOLMOD/Lib'
+x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vector"
+"1","ize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_aat.c -o cholmod_aat.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_add.c -o cholmod_add.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_band.c -o cholmod_band.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_change_factor.c -o cholmod_change_factor.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_common.c -o cholmod_common.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_complex.c -o cholmod_complex.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_copy.c -o cholmod_copy.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_dense.c -o cholmod_dense.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_error.c -o cholmod_error.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_factor.c -o cholmod_factor.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_memory.c -o cholmod_memory.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_sparse.c -o cholmod_sparse.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_transpose.c -o cholmod_transpose.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_triplet.c -o cholmod_triplet.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Core/cholmod_version.c -o cholmod_version.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Check/cholmod_check.c -o cholmod_check.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Check/cholmod_read.c -o cholmod_read.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Check/cholmod_write.c -o cholmod_write.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_amd.c -o cholmod_amd.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_analyze.c -o cholmod_analyze.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_colamd.c -o cholmod_colamd.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_etree.c -o cholmod_etree.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_factorize.c -o cholmod_factorize.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_postorder.c -o cholmod_postorder.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_rcond.c -o cholmod_rcond.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_resymbol.c -o cholmod_resymbol.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_rowcolcounts.c -o cholmod_rowcolcounts.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_rowfac.c -o cholmod_rowfac.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_solve.c -o cholmod_solve.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Cholesky/cholmod_spsolve.c -o cholmod_spsolve.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../MatrixOps/cholmod_drop.c -o cholmod_drop.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../MatrixOps/cholmod_horzcat.c -o cholmod_horzcat.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../MatrixOps/cholmod_norm.c -o cholmod_norm.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../MatrixOps/cholmod_scale.c -o cholmod_scale.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../MatrixOps/cholmod_sdmult.c -o cholmod_sdmult.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../MatrixOps/cholmod_ssmult.c -o cholmod_ssmult.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../MatrixOps/cholmod_submatrix.c -o cholmod_submatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../MatrixOps/cholmod_vertcat.c -o cholmod_vertcat.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../MatrixOps/cholmod_symmetry.c -o cholmod_symmetry.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Modify/cholmod_rowadd.c -o cholmod_rowadd.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Modify/cholmod_rowdel.c -o cholmod_rowdel.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Modify/cholmod_updown.c -o cholmod_updown.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Supernodal/cholmod_super_numeric.c -o cholmod_super_numeric.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Supernodal/cholmod_super_solve.c -o cholmod_super_solve.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c ../Supernodal/cholmod_super_symbolic.c -o cholmod_super_symbolic.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_aat.c -o cholmod_l_aat.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_add.c -o cholmod_l_add.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_band.c -o cholmod_l_band.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_change_factor.c -o cholmod_l_change_factor.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_common.c -o cholmod_l_common.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_complex.c -o cholmod_l_complex.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_copy.c -o cholmod_l_copy.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_dense.c -o cholmod_l_dense.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_error.c -o cholmod_l_error.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_factor.c -o cholmod_l_factor.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_memory.c -o cholmod_l_memory.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_sparse.c -o cholmod_l_sparse.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_transpose.c -o cholmod_l_transpose.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_triplet.c -o cholmod_l_triplet.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Core/cholmod_version.c -o cholmod_l_version.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Check/cholmod_check.c -o cholmod_l_check.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Check/cholmod_read.c -o cholmod_l_read.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Check/cholmod_write.c -o cholmod_l_write.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_amd.c -o cholmod_l_amd.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_analyze.c -o cholmod_l_analyze.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_colamd.c -o cholmod_l_colamd.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_etree.c -o cholmod_l_etree.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_factorize.c -o cholmod_l_factorize.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_postorder.c -o cholmod_l_postorder.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_rcond.c -o cholmod_l_rcond.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_resymbol.c -o cholmod_l_resymbol.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_rowcolcounts.c -o cholmod_l_rowcolcounts.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_rowfac.c -o cholmod_l_rowfac.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_solve.c -o cholmod_l_solve.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Cholesky/cholmod_spsolve.c -o cholmod_l_spsolve.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../MatrixOps/cholmod_drop.c -o cholmod_l_drop.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../MatrixOps/cholmod_horzcat.c -o cholmod_l_horzcat.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../MatrixOps/cholmod_norm.c -o cholmod_l_norm.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../MatrixOps/cholmod_scale.c -o cholmod_l_scale.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../MatrixOps/cholmod_sdmult.c -o cholmod_l_sdmult.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../MatrixOps/cholmod_ssmult.c -o cholmod_l_ssmult.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../MatrixOps/cholmod_submatrix.c -o cholmod_l_submatrix.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../MatrixOps/cholmod_vertcat.c -o cholmod_l_vertcat.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../MatrixOps/cholmod_symmetry.c -o cholmod_l_symmetry.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Modify/cholmod_rowadd.c -o cholmod_l_rowadd.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Modify/cholmod_rowdel.c -o cholmod_l_rowdel.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Modify/cholmod_updown.c -o cholmod_l_updown.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Supernodal/cholmod_super_numeric.c -o cholmod_l_super_numeric.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Supernodal/cholmod_super_solve.c -o cholmod_l_super_solve.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../../AMD/Include -I../../AMD/Source -I../../COLAMD/Include -I../Include -I../../SuiteSparse_config -DNPARTITION -DNPRINT  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes"
+"1","/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -DDLONG -c  ../Supernodal/cholmod_super_symbolic.c -o cholmod_l_super_symbolic.o
+"
+"1","x86_64-apple-darwin13.4.0-ar -rucs ../../CHOLMOD.a cholmod_aat.o cholmod_add.o cholmod_band.o cholmod_change_factor.o cholmod_common.o cholmod_complex.o cholmod_copy.o cholmod_dense.o cholmod_error.o cholmod_factor.o cholmod_memory.o cholmod_sparse.o cholmod_transpose.o cholmod_triplet.o cholmod_version.o cholmod_check.o cholmod_read.o cholmod_write.o cholmod_amd.o cholmod_analyze.o cholmod_colamd.o cholmod_etree.o cholmod_factorize.o cholmod_postorder.o cholmod_rcond.o cholmod_resymbol.o cholmod_rowcolcoun"
+"1","ts.o cholmod_rowfac.o cholmod_solve.o cholmod_spsolve.o cholmod_drop.o cholmod_horzcat.o cholmod_norm.o cholmod_scale.o cholmod_sdmult.o cholmod_ssmult.o cholmod_submatrix.o cholmod_vertcat.o cholmod_symmetry.o cholmod_rowadd.o cholmod_rowdel.o cholmod_updown.o cholmod_super_numeric.o cholmod_super_solve.o cholmod_super_symbolic.o  cholmod_l_aat.o cholmod_l_add.o cholmod_l_band.o cholmod_l_change_factor.o cholmod_l_common.o cholmod_l_complex.o cholmod_l_copy.o cholmod_l_dense.o cholmod_l_error.o cholmod_l_f"
+"1","actor.o cholmod_l_memory.o cholmod_l_sparse.o cholmod_l_transpose.o cholmod_l_triplet.o cholmod_l_version.o cholmod_l_check.o cholmod_l_read.o cholmod_l_write.o cholmod_l_amd.o cholmod_l_analyze.o cholmod_l_colamd.o cholmod_l_etree.o cholmod_l_factorize.o cholmod_l_postorder.o cholmod_l_rcond.o cholmod_l_resymbol.o cholmod_l_rowcolcounts.o cholmod_l_rowfac.o cholmod_l_solve.o cholmod_l_spsolve.o cholmod_l_drop.o cholmod_l_horzcat.o cholmod_l_norm.o cholmod_l_scale.o cholmod_l_sdmult.o cholmod_l_ssmult.o cho"
+"1","lmod_l_submatrix.o cholmod_l_vertcat.o cholmod_l_symmetry.o cholmod_l_rowadd.o cholmod_l_rowdel.o cholmod_l_updown.o cholmod_l_super_numeric.o cholmod_l_super_solve.o cholmod_l_super_symbolic.o 
+"
+"1","make[2]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/CHOLMOD/Lib'
+"
+"1","make[1]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/CHOLMOD'
+"
+"1","make[1]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/COLAMD'
+( cd Source ; make -f ""/Users/aliciaireland/opt/anaconda3/lib/R/etc/Makeconf"" -f Makefile lib )
+"
+"1","make[2]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/COLAMD/Source'
+x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anac"
+"1","onda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c colamd_global.c -o colamd_global.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c colamd.c -o colamd.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c colamd.c -o colamd_l.o
+"
+"1","x86_64-apple-darwin13.4.0-ar -rucs ../../COLAMD.a colamd_global.o colamd.o colamd_l.o
+"
+"1","make[2]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/COLAMD/Source'
+"
+"1","make[1]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/COLAMD'
+"
+"1","make[1]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/AMD'
+( cd Source ; make -f ""/Users/aliciaireland/opt/anaconda3/lib/R/etc/Makeconf"" -f Makefile lib )
+"
+"1","make[2]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/AMD/Source'
+x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anacond"
+"1","a3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_aat.c -o amd_i_aat.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_aat.c -o amd_l_aat.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_1.c -o amd_i_1.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_1.c -o amd_l_1.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_2.c -o amd_i_2.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_2.c -o amd_l_2.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_postorder.c -o amd_i_postorder.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_postorder.c -o amd_l_postorder.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_post_tree.c -o amd_i_post_tree.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_post_tree.c -o amd_l_post_tree.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_defaults.c -o amd_i_defaults.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_defaults.c -o amd_l_defaults.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_order.c -o amd_i_order.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_order.c -o amd_l_order.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_control.c -o amd_i_control.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_control.c -o amd_l_control.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_info.c -o amd_i_info.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_info.c -o amd_l_info.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_valid.c -o amd_i_valid.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_valid.c -o amd_l_valid.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_preprocess.c -o amd_i_preprocess.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_preprocess.c -o amd_l_preprocess.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_dump.c -o amd_i_dump.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_dump.c -o amd_l_dump.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDINT -c amd_global.c -o amd_i_global.o
+"
+"1","x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -I../Include -I../../SuiteSparse_config  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-prefix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/loc"
+"1","al/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -I../Include -DDLONG -c amd_global.c -o amd_l_global.o
+"
+"1","x86_64-apple-darwin13.4.0-ar -rucs ../../AMD.a amd_i_aat.o amd_l_aat.o amd_i_1.o amd_l_1.o amd_i_2.o amd_l_2.o amd_i_postorder.o amd_l_postorder.o amd_i_post_tree.o amd_l_post_tree.o amd_i_defaults.o amd_l_defaults.o amd_i_order.o amd_l_order.o amd_i_control.o amd_l_control.o amd_i_info.o amd_l_info.o amd_i_valid.o amd_l_valid.o amd_i_preprocess.o amd_l_preprocess.o amd_i_dump.o amd_l_dump.o amd_i_global.o amd_l_global.o 
+"
+"2","/Users/aliciaireland/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ranlib: file: ../../AMD.a(amd_i_dump.o) has no symbols
+/Users/aliciaireland/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ranlib: file: ../../AMD.a(amd_l_dump.o) has no symbols
+"
+"1","make[2]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/AMD/Source'
+"
+"1","make[1]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/AMD'
+"
+"1","make[1]: Entering directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/SuiteSparse_config'
+x86_64-apple-darwin13.4.0-clang -I""/Users/aliciaireland/opt/anaconda3/lib/R/include"" -DNDEBUG -DNTIMER  -D_FORTIFY_SOURCE=2 -mmacosx-version-min=10.9  -I/Users/aliciaireland/opt/anaconda3/include  -fPIC  -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -I/Users/aliciaireland/opt/anaconda3/include -fdebug-pref"
+"1","ix-map=/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/work=/usr/local/src/conda/r-base-3.6.1 -fdebug-prefix-map=/Users/aliciaireland/opt/anaconda3=/usr/local/src/conda-prefix  -c SuiteSparse_config.c -o SuiteSparse_config.o
+"
+"1","x86_64-apple-darwin13.4.0-ar -rucs ../SuiteSparse_config.a SuiteSparse_config.o
+"
+"1","make[1]: Leaving directory '/private/var/folders/dw/r4h430d543n7dmrrqpkrwfk80000gn/T/RtmpTSNvDg/R.INSTALL143992a844a88/Matrix/src/SuiteSparse_config'
+"
+"1","x86_64-apple-darwin13.4.0-clang -dynamiclib -Wl,-headerpad_max_install_names -undefined dynamic_lookup -single_module -multiply_defined suppress -L/Users/aliciaireland/opt/anaconda3/lib/R/lib -Wl,-dead_strip_dylibs -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -Wl,-rpath,/Users/aliciaireland/opt/anaconda3/lib -L/Users/aliciaireland/opt/anaconda3/lib -o Matrix.dylib CHMfactor.o Csparse.o TMatrix_as.o Tsparse.o init.o Mutils.o chm_common.o cs.o cs_utils.o dense.o dgCMatrix.o dgTMatrix.o dge"
+"1","Matrix.o dpoMatrix.o dppMatrix.o dsCMatrix.o dsyMatrix.o dspMatrix.o dtCMatrix.o dtTMatrix.o dtrMatrix.o dtpMatrix.o factorizations.o ldense.o lgCMatrix.o sparseQR.o abIndex.o CHOLMOD.a COLAMD.a AMD.a SuiteSparse_config.a -L/Users/aliciaireland/opt/anaconda3/lib/R/lib -lRlapack -L/Users/aliciaireland/opt/anaconda3/lib/R/lib -lRblas -L/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/_build_env/lib/gcc/x86_64-apple-darwin11.4.2/4.8.5 -L/opt/concourse/worker/v"
+"1","olumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/_build_env/lib/gcc -L/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/_build_env/lib -lgfortran -lquadmath -lm -L/Users/aliciaireland/opt/anaconda3/lib/R/lib -lR -Wl,-framework -Wl,CoreFoundation
+"
+"2","ld: warning: directory not found for option '-L/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/_build_env/lib/gcc/x86_64-apple-darwin11.4.2/4.8.5'
+ld: warning: "
+"2","directory not found for option '-L/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/_build_env/lib/gcc'
+ld: warning: directory not found for option '-L/opt/concourse/worker/volumes/live/59b7f007-fada-42cf-7435-5bbd0518eaa4/volume/r-base_1570124919999/_build_env/lib'
+"
+"2","ld: warning: -pie being ignored. It is only used when linking a main executable
+"
+"2","installing to /Users/aliciaireland/opt/anaconda3/lib/R/library/00LOCK-Matrix/00new/Matrix/libs
+"
+"2","** R
+"
+"2","** data
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"1","Creating a generic function for ‘chol2inv’ from ‘base’ in package ‘Matrix’
+    (from the saved implicit definition)
+Creating a generic function for ‘chol2inv’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘diag’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘drop’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘cov2cor’ from package ‘stats’ in package ‘Matrix’
+Creating a g"
+"1","eneric function for ‘unname’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘norm’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘rcond’ from ‘base’ in package ‘Matrix’
+    (from the saved implicit definition)
+Creating a generic function for ‘rcond’ from package ‘base’ in package ‘Matrix’
+in method for ‘coerce’ with signature ‘""matrix.csr"",""dgRMatrix""’: no definition for class “matrix.csr”
+in metho"
+"1","d for ‘coerce’ with signature ‘""dgRMatrix"",""matrix.csr""’: no definition for class “matrix.csr”
+in method for ‘coerce’ with signature ‘""matrix.csc"",""dgCMatrix""’: no definition for class “matrix.csc”
+in method for ‘coerce’ with signature ‘""dgCMatrix"",""matrix.csc""’: no definition for class “matrix.csc”
+in method for ‘coerce’ with signature ‘""matrix.coo"",""dgTMatrix""’: no definition for class “matrix.coo”
+in method for ‘coerce’ with signature ‘""dgTMatrix"",""ma"
+"1","trix.coo""’: no definition for class “matrix.coo”
+in method for ‘coerce’ with signature ‘""dsparseMatrix"",""matrix.csr""’: no definition for class “matrix.csr”
+in method for ‘coerce’ with signature ‘""matrix.csr"",""dgCMatrix""’: no definition for class “matrix.csr”
+in method for ‘coerce’ with signature ‘""matrix.coo"",""dgCMatrix""’: no definition for class “matrix.coo”
+in method for ‘coerce’ with signature ‘""matrix.csr"",""RsparseMatrix""’: no definition for class “mat"
+"1","rix.csr”
+in method for ‘coerce’ with signature ‘""matrix.csc"",""CsparseMatrix""’: no definition for class “matrix.csc”
+in method for ‘coerce’ with signature ‘""matrix.coo"",""TsparseMatrix""’: no definition for class “matrix.coo”
+in method for ‘coerce’ with signature ‘""matrix.csr"",""CsparseMatrix""’: no definition for class “matrix.csr”
+in method for ‘coerce’ with signature ‘""matrix.coo"",""CsparseMatrix""’: no definition for class “matrix.coo”
+in method for ‘coerce�"
+"1","� with signature ‘""matrix.csc"",""TsparseMatrix""’: no definition for class “matrix.csc”
+in method for ‘coerce’ with signature ‘""matrix.csr"",""TsparseMatrix""’: no definition for class “matrix.csr”
+in method for ‘coerce’ with signature ‘""CsparseMatrix"",""matrix.csr""’: no definition for class “matrix.csr”
+in method for ‘coerce’ with signature ‘""CsparseMatrix"",""matrix.coo""’: no definition for class “matrix.coo”
+in method for ‘coerce’ with signature ‘""CsparseMatrix"","
+"1","""matrix.csc""’: no definition for class “matrix.csc”
+in method for ‘coerce’ with signature ‘""matrix.csr"",""Matrix""’: no definition for class “matrix.csr”
+in method for ‘coerce’ with signature ‘""matrix.coo"",""Matrix""’: no definition for class “matrix.coo”
+in method for ‘coerce’ with signature ‘""matrix.csc"",""Matrix""’: no definition for class “matrix.csc”
+Creating a generic function for ‘colSums’ from package ‘base’ in package ‘Matrix’
+Creating a generic funct"
+"1","ion for ‘colMeans’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘rowSums’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘rowMeans’ from package ‘base’ in package ‘Matrix’
+in method for ‘colSums’ with signature ‘x=""igCMatrix""’: no definition for class “igCMatrix”
+in method for ‘rowSums’ with signature ‘x=""igCMatrix""’: no definition for class “igCMatrix”
+in method for ‘colMeans’ with signature "
+"1","‘x=""igCMatrix""’: no definition for class “igCMatrix”
+in method for ‘rowMeans’ with signature ‘x=""igCMatrix""’: no definition for class “igCMatrix”
+Creating a generic function for ‘zapsmall’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘diag<-’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘crossprod’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘tcrossprod’ from package "
+"1","‘base’ in package ‘Matrix’
+Creating a generic function for ‘which’ from package ‘base’ in package ‘Matrix’
+in method for ‘coerce’ with signature ‘""graphAM"",""sparseMatrix""’: no definition for class “graphAM”
+in method for ‘coerce’ with signature ‘""graph"",""CsparseMatrix""’: no definition for class “graph”
+in method for ‘coerce’ with signature ‘""graph"",""Matrix""’: no definition for class “graph”
+in method for ‘coerce’ with signature ‘""graphNEL"",""Cspar"
+"1","seMatrix""’: no definition for class “graphNEL”
+in method for ‘coerce’ with signature ‘""graphNEL"",""TsparseMatrix""’: no definition for class “graphNEL”
+in method for ‘coerce’ with signature ‘""sparseMatrix"",""graph""’: no definition for class “graph”
+in method for ‘coerce’ with signature ‘""sparseMatrix"",""graphNEL""’: no definition for class “graphNEL”
+in method for ‘coerce’ with signature ‘""TsparseMatrix"",""graphNEL""’: no definition for class “graphNEL”
+Creatin"
+"1","g a generic function for ‘qr.R’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘qr.Q’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘qr.qy’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘qr.qty’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘qr.coef’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘qr.resid’ from packag"
+"1","e ‘base’ in package ‘Matrix’
+Creating a generic function for ‘qr.fitted’ from package ‘base’ in package ‘Matrix’
+Creating a generic function for ‘toeplitz’ from package ‘stats’ in package ‘Matrix’
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"

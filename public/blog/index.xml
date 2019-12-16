@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Chris Turner</title>
+    <link>/blog/</link>
+    <description>Recent content in Blogs on Chris Turner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interesting Stuff</title>
+      <link>/blog/interesting-stuff/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/interesting-stuff/</guid>
+      <description>SDS 348 has been a very informative joyride, I don’t think I’ve ever been so frsutrated yet intrigued at the same time. After months of the glorious Rstudio, we got to learn a bit about the great Python.
+For example we learned different type of loops, such as the following while loop:
+mine=[1,2,3,4,5,6,7,8,9] i=0 while i &amp;lt; len(mine): i2=2**mine[i] print(i2) i+=1 ## 2 ## 4 ## 8 ## 16 ## 32 ## 64 ## 128 ## 256 ## 512 Additionally, I found regex (esp.</description>
+    </item>
+    
+  </channel>
+</rss>

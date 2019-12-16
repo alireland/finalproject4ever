@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alicia Ireland" />
+    <meta name="description" content="Welcome to my Life">
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+    <title>The Effect of Sunspots on Bee Colonies</title>
+    <meta name="generator" content="Hugo 0.61.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"><i class="fa fa-home"></i></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/blog/">BLOG</a></li>
+        
+        <li><a href="/projects/">PROJECTS</a></li>
+        
+        <li><a href="/resume/">RESUME</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="/project1/">The Effect of Sunspots on Bee Colonies</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          January 1, 0001
+            &nbsp;&nbsp;
+            
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              
+
+
+<p><em>I chose to analyze the effects of the number of sunspots on the number of bee colonies in the United states. To do so, I combined the honey production and sunspot data sets. The sunspot dataset contains the monthly mean relative number of sunspots for each month from the years of 1749 to 2013. The honey production dataset contains the number of colonies, yield per colony, production of honey and additional related variables for the 50 united states from 1998 to 2012</em></p>
+<p><em>So what is the correlation between these two variables? Well,sunpots are darker, cooler areas on the sun that are created by the interaction of the sun’s magnetic field. The solar radition admitted by the sun increases with the number of sunspots, thus causing an increase of the temperature on earth.It is ultimately believed that the number of sunpots greately impacts the climate and weather on earth. That being said, one species whose activity is highly reliant on climate and seasonal changes is the honey bee. Honey Bee’s are most active during the summer and spring seasons when the temperature is warmer and the flowering of plants is at its peak. With all this in mind it is expected that the number of bee colonies and the production of honey would increase with an increase in temperature, and thus with the increase in number of sunspots. </em></p>
+<p><em>I joined the two datasets by year in order to see how the bee population and honey production changed in relation to the change in the number of sunspots over the years. I then ommited any row in which there was missing data. I further deleted the month and day column, which originally came from the sunspot dataset, because the honey production data was only reflective on the total amount per year.</em>
+## R Markdown</p>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
+<div id="including-plots" class="section level2">
+<h2>Including Plots</h2>
+<pre class="r"><code>summary(fullness)</code></pre>
+<pre><code>##      state          numcol        yieldpercol       totalprod       
+##  AL     : 180   Min.   :  2000   Min.   : 19.00   Min.   :   84000  
+##  AR     : 180   1st Qu.:  9000   1st Qu.: 48.00   1st Qu.:  472000  
+##  AZ     : 180   Median : 26000   Median : 60.00   Median : 1533000  
+##  CA     : 180   Mean   : 60284   Mean   : 62.01   Mean   : 4169086  
+##  CO     : 180   3rd Qu.: 64000   3rd Qu.: 74.00   3rd Qu.: 4180000  
+##  FL     : 180   Max.   :510000   Max.   :136.00   Max.   :46410000  
+##  (Other):6432                                                       
+##      stocks           priceperlb     prodvalue             year     
+##  Min.   :    8000   Min.   :0.49   Min.   :  162000   Min.   :1998  
+##  1st Qu.:  143000   1st Qu.:0.93   1st Qu.:  759000   1st Qu.:2001  
+##  Median :  439500   Median :1.36   Median : 1841500   Median :2005  
+##  Mean   : 1318859   Mean   :1.41   Mean   : 4715741   Mean   :2005  
+##  3rd Qu.: 1491000   3rd Qu.:1.68   3rd Qu.: 4728000   3rd Qu.:2009  
+##  Max.   :13800000   Max.   :4.15   Max.   :69615000   Max.   :2012  
+##                                                                     
+##      value       
+##  Min.   :  0.00  
+##  1st Qu.: 13.90  
+##  Median : 48.00  
+##  Mean   : 53.36  
+##  3rd Qu.: 84.60  
+##  Max.   :170.10  
+## </code></pre>
+<pre class="r"><code>fullness%&gt;%group_by(state,year)%&gt;%dplyr::summarize(meansunspot=mean(value), meanprod=mean(totalprod), meancol=mean(numcol))</code></pre>
+<pre><code>## # A tibble: 626 x 5
+## # Groups:   state [44]
+##    state  year meansunspot meanprod meancol
+##    &lt;fct&gt; &lt;int&gt;       &lt;dbl&gt;    &lt;dbl&gt;   &lt;dbl&gt;
+##  1 AL     1998        64.2  1136000   16000
+##  2 AL     1999        93.2  1156000   17000
+##  3 AL     2000       120.   1248000   16000
+##  4 AL     2001       111.   1022000   14000
+##  5 AL     2002       104.   1032000   12000
+##  6 AL     2003        63.6  1066000   13000
+##  7 AL     2004        40.4  1044000   12000
+##  8 AL     2005        29.8   858000   13000
+##  9 AL     2006        15.2   792000   11000
+## 10 AL     2007         7.5   616000   11000
+## # … with 616 more rows</code></pre>
+<pre class="r"><code>fullness%&gt;%arrange(desc(value))%&gt;%filter(year==&quot;2000&quot;)%&gt;%dplyr::summarize(meansunspot=mean(value), meancol=mean(numcol))</code></pre>
+<pre><code>##   meansunspot  meancol
+## 1    119.5333 60558.14</code></pre>
+<pre class="r"><code>fullness%&gt;%filter(year==&quot;2008&quot;)%&gt;%dplyr::summarize(meansunspot=mean(value), meancol=mean(numcol))</code></pre>
+<pre><code>##   meansunspot  meancol
+## 1    2.866667 56731.71</code></pre>
+<pre class="r"><code>fullness%&gt;%dplyr::summarize(n_distinct(value),n_distinct(numcol))</code></pre>
+<pre><code>##   n_distinct(value) n_distinct(numcol)
+## 1               164                148</code></pre>
+<pre class="r"><code>fullness %&gt;%dplyr::select(value,numcol,yieldpercol,totalprod,stocks,prodvalue) %&gt;%cor()</code></pre>
+<pre><code>##                    value       numcol yieldpercol  totalprod     stocks
+## value        1.000000000 -0.002755755   0.1374259 0.03348681 0.04888939
+## numcol      -0.002755755  1.000000000   0.2435149 0.95359438 0.82592898
+## yieldpercol  0.137425936  0.243514904   1.0000000 0.39625204 0.36781180
+## totalprod    0.033486805  0.953594383   0.3962520 1.00000000 0.87883011
+## stocks       0.048889392  0.825928984   0.3678118 0.87883011 1.00000000
+## prodvalue   -0.065696210  0.912796249   0.2789769 0.90723552 0.72856036
+##               prodvalue
+## value       -0.06569621
+## numcol       0.91279625
+## yieldpercol  0.27897690
+## totalprod    0.90723552
+## stocks       0.72856036
+## prodvalue    1.00000000</code></pre>
+<pre class="r"><code>fullness%&gt;%dplyr::select(value,numcol,yieldpercol,totalprod,stocks,prodvalue)%&gt;%dplyr::summarize_all(sd)</code></pre>
+<pre><code>##      value   numcol yieldpercol totalprod  stocks prodvalue
+## 1 41.78296 91010.37     19.4445   6878804 2271299   7970267</code></pre>
+<p><em>In order to better understand my dataset, I ran multiple summary statistics on my target variables. I first grouped my data by state and year to than summarize the correlating mean values for number of sunspots, number of colonies, and amount of honey produced. Looking through these values for each state by every year, there was no visible relationship, as the increase in one value was not always indicative and a coinciding increase in the other variable values. To further test this I selected the year in which the number of sunspots was the highest (2000)and the year in which the number of sunspots was the lowest(2008). I then compared the values of the number of colonies and found that the year of lowest sunspots had a lower number of bee colonies 56731 then the year with the highest sunspots (60558).</em></p>
+<p><em>To truly get an understanding of the relationship between my target variables, I ran a correlation test. While many of the variables that came from the honey production dataset (number of colonies, amount of honey produce, yield per colony) had a high correlation, the number of sunspots didn’t correlate to any of these variables. In fact, the correlation for the number of sunspots and the number of colonies was -.0027. The best correlation out of the bunch with the number of sunspots was with the amount of honey produced per colony at .1374.</em></p>
+<pre class="r"><code>full=fullness%&gt;%group_by(state,year)%&gt;% dplyr::mutate(meansunspot=mean(value))
+
+
+heat=full%&gt;%select(-value)%&gt;% distinct()
+heat%&gt;%head()</code></pre>
+<pre><code>## # A tibble: 6 x 9
+## # Groups:   state, year [6]
+##   state numcol yieldpercol totalprod stocks priceperlb prodvalue  year
+##   &lt;fct&gt;  &lt;dbl&gt;       &lt;int&gt;     &lt;dbl&gt;  &lt;dbl&gt;      &lt;dbl&gt;     &lt;dbl&gt; &lt;int&gt;
+## 1 AL     16000          71   1136000 1.59e5       0.72    818000  1998
+## 2 AZ     55000          60   3300000 1.48e6       0.64   2112000  1998
+## 3 AR     53000          65   3445000 1.69e6       0.59   2033000  1998
+## 4 CA    450000          83  37350000 1.23e7       0.62  23157000  1998
+## 5 CO     27000          72   1944000 1.59e6       0.7    1361000  1998
+## 6 FL    230000          98  22540000 4.51e6       0.64  14426000  1998
+## # … with 1 more variable: meansunspot &lt;dbl&gt;</code></pre>
+<p><em>After looking at my variables and analyzing the summary statistics, I created a new column (throught mutate) called meansunspot by first grouping by state and year. This allowed me to then average the value column in order to get the approximate number of sunspots per year based on the average of all the months in that year. I then deleted the value column, that represented the sunspots per month, and finished by selecting only the distinct rows. I saved all my changes into a new dataset(heat) which will better represent the data and the relationship between the number of sunspots and beecolonies/honey production over the years. I specifically made these changes because the vast number of data from the sunspots ( number per month for every year) wasn’t necessarily matching up to the honeyproduction dataset (number per year). This allowed to decrease the amount of extroplation and better understand the data overall. </em></p>
+<p>You can also embed plots, for example:</p>
+<pre class="r"><code>ggplot(heat, aes(meansunspot,numcol))+geom_line(aes(color = state))+theme(legend.position=&quot;none&quot;)+ylab(&quot;Number of Bee Colonies&quot;)+xlab(&quot;Number of Sunspots&quot;)+ggtitle(&quot;Relationship between the number of sunspots and bee colonies in the U.S.&quot;)</code></pre>
+<p><img src="/Project1_files/figure-html/pressure-1.png" width="672" />
+<em>From graphing the number of Sunspots versus the number of bee colonies in the 50 different states, it can be concluded that there is no relationship between the two varibles.Each line (state) has a very different trend and seems to change sporadically without any specific pattern. This was expected after looking at the correlation between the two variables which was -.0027. </em></p>
+<pre class="r"><code> ggplot(heat, aes(year))+  geom_bar(aes(y=meansunspot,fill=state), stat=&quot;summary&quot;)+  theme(legend.position=&quot;none&quot;)+ggtitle(&quot;Number of Sunspots per Year in the U.S.&quot;) + ylab(&quot;Number of Sunspots&quot;) + xlab(&quot;Year&quot;)</code></pre>
+<pre><code>## No summary function supplied, defaulting to `mean_se()</code></pre>
+<p><img src="/Project1_files/figure-html/true-1.png" width="672" /></p>
+<pre class="r"><code> ggplot(heat, aes(year))+  geom_bar(aes(y=yieldpercol,fill=state), stat=&quot;summary&quot;)+  theme(legend.position=&quot;none&quot;)+ggtitle(&quot;Amount of Honey yielded per colony per Year in the U.S.&quot;) + ylab(&quot;Amount of honey Yielded per colony (lb)&quot;) + xlab(&quot;Year&quot;)</code></pre>
+<pre><code>## No summary function supplied, defaulting to `mean_se()</code></pre>
+<p><img src="/Project1_files/figure-html/true-2.png" width="672" />
+<em>To compare the amount of honey yeilded per colony to the amount of sunspots per year, two seperate bar graphs were created. I used two seperate graphs to better organize the data since putting them both on one graph resulted in a highly scatterd and unreadable graph. It is apparent from the years vs. number of sunspots that the number of sunspots is at its peak around 2000 and is at its lowest between the years of 2005 to 2010. When looking at the years versus honey yielded per colony it can bee seen that the amount of honey yeilded is pretty constant with a very slight decline over the years. When comparing the two on their mutual timeline, we can see that there is no true correlation between the two, as each graph appears to be independent of one another.</em></p>
+<pre class="r"><code>het3=fullness%&gt;%dplyr::select_if(is.numeric)%&gt;%scale
+rownames(het3)&lt;-fullness$state
+bees&lt;-princomp(het3)
+summary(bees, loadings=T)</code></pre>
+<pre><code>## Importance of components:
+##                           Comp.1    Comp.2    Comp.3     Comp.4     Comp.5
+## Standard deviation     1.9684507 1.4759515 0.8973595 0.77397775 0.50769583
+## Proportion of Variance 0.4844142 0.2723404 0.1006702 0.07489016 0.03222367
+## Cumulative Proportion  0.4844142 0.7567546 0.8574248 0.93231491 0.96453859
+##                            Comp.6      Comp.7      Comp.8
+## Standard deviation     0.44137702 0.248666800 0.164331063
+## Proportion of Variance 0.02435495 0.007730426 0.003376037
+## Cumulative Proportion  0.98889354 0.996623963 1.000000000
+## 
+## Loadings:
+##             Comp.1 Comp.2 Comp.3 Comp.4 Comp.5 Comp.6 Comp.7 Comp.8
+## numcol       0.476  0.145  0.203         0.168         0.618  0.541
+## yieldpercol  0.247 -0.203 -0.845 -0.406                       0.108
+## totalprod    0.496                              0.104  0.278 -0.808
+## stocks       0.460                      -0.743 -0.354 -0.283  0.153
+## priceperlb  -0.206  0.495  0.133 -0.599 -0.375  0.433              
+## prodvalue    0.449  0.225  0.116 -0.103  0.440  0.263 -0.670  0.113
+## year                0.616 -0.130 -0.164  0.262 -0.703              
+## value              -0.503  0.438 -0.655  0.128 -0.327</code></pre>
+<pre class="r"><code>eigval&lt;-bees$sdev^2
+round(cumsum(eigval)/sum(eigval),2)</code></pre>
+<pre><code>## Comp.1 Comp.2 Comp.3 Comp.4 Comp.5 Comp.6 Comp.7 Comp.8 
+##   0.48   0.76   0.86   0.93   0.96   0.99   1.00   1.00</code></pre>
+<pre class="r"><code>eigval</code></pre>
+<pre><code>##     Comp.1     Comp.2     Comp.3     Comp.4     Comp.5     Comp.6     Comp.7 
+## 3.87479797 2.17843292 0.80525399 0.59904155 0.25775505 0.19481367 0.06183518 
+##     Comp.8 
+## 0.02700470</code></pre>
+<pre class="r"><code>eigen(cor(het3))</code></pre>
+<pre><code>## eigen() decomposition
+## $values
+## [1] 3.87531386 2.17872295 0.80536120 0.59912131 0.25778937 0.19483961 0.06184341
+## [8] 0.02700829
+## 
+## $vectors
+##             [,1]        [,2]        [,3]        [,4]         [,5]        [,6]
+## [1,] -0.47625847 -0.14509682 -0.20294938 -0.06403792 -0.167786311 -0.05932639
+## [2,] -0.24662150  0.20283361  0.84458146  0.40628670 -0.029930122 -0.04737256
+## [3,] -0.49553979 -0.09644372 -0.06144364  0.03007897  0.009417977 -0.10412620
+## [4,] -0.46011937 -0.03781306 -0.04239027 -0.06828664  0.742717307  0.35400529
+## [5,]  0.20605242 -0.49466047 -0.13303905  0.59894760  0.374721880 -0.43308398
+## [6,] -0.44888855 -0.22522428 -0.11597443  0.10320324 -0.439815527 -0.26269970
+## [7,]  0.08779317 -0.61573112  0.13009988  0.16402644 -0.262433953  0.70347053
+## [8,] -0.05848094  0.50252806 -0.43800230  0.65495698 -0.128485333  0.32654335
+##             [,7]         [,8]
+## [1,]  0.61830733  0.541165091
+## [2,]  0.06991244  0.107804966
+## [3,]  0.27803054 -0.807605670
+## [4,] -0.28282323  0.153175101
+## [5,]  0.07608171  0.051469927
+## [6,] -0.66963219  0.113207840
+## [7,]  0.03632951 -0.065381251
+## [8,]  0.00167179 -0.009435477</code></pre>
+<pre class="r"><code>ggplot()+geom_point(aes(bees$scores[,1], bees$scores[,2]))+xlab(&quot;PC1&quot;)+ylab(&quot;PC2&quot;)</code></pre>
+<p><img src="/Project1_files/figure-html/new-1.png" width="672" /></p>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+</div>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        <div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+
+      var disqus_shortname = '';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
+      <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a> with ♥</p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="/js/docs.min.js"></script>
+<script src="/js/main.js"></script>
+
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,120 @@
+---
+title: "The Effect of Sunspots on Bee Colonies"
+author: "Alicia Ireland (ani324)"
+date: "10/20/2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+*I chose to analyze the effects of the number of sunspots on the number of bee colonies in the United states. To do so, I combined the honey production and sunspot data sets. The sunspot dataset contains the monthly mean relative number of sunspots for each month from the years of 1749 to 2013. The honey production dataset contains the number of colonies, yield per colony, production of honey and additional related variables for the 50 united states from 1998 to 2012*
+
+*So what is the correlation between these two variables? Well,sunpots are darker, cooler areas on the sun that are created by the interaction of the sun's magnetic field. The solar radition admitted by the sun increases with the number of sunspots, thus causing an increase of the temperature on earth.It is ultimately believed that the number of sunpots greately impacts the climate and weather on earth. That being said, one species whose activity is highly reliant on climate and seasonal changes is the honey bee. Honey Bee's are most active during the summer and spring seasons when the temperature is warmer and the flowering of plants is at its peak. With all this in mind it is expected that the number of bee colonies and the production of honey would increase with an increase in temperature, and thus with the increase in number of sunspots. *
+  
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr) 
+library(tidyverse)
+library(tidyr)
+#install.packages("timetk")
+library(timetk)
+#install.packages("tibbletime")
+library(tibbletime)
+#install.packages("lubridate")
+library(lubridate)
+
+data("sunspots")
+sun <- datasets::sunspot.month %>%
+    tk_tbl() %>%
+    mutate(index = as_date(index)) %>%
+    as_tbl_time(index = index)
+
+sun2=sun%>%separate(index, into= c("year", "month", "day"), sep="-")%>%mutate_if(is.character,as.integer)
+view(sun2)
+honeyproduction=read.csv("honeyproduction.csv")
+fullness <- full_join(honeyproduction, sun2)%>%na.omit()%>%select(-month,-day)
+head(fullness)
+
+
+```
+*I joined the two datasets by year in order to see how the bee population and honey production changed in relation to the change in the number of sunspots over the years. I then ommited any row in which there was missing data. I further deleted the month and day column, which originally came from the sunspot dataset, because the honey production data was only reflective on the total amount per year.*
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+## Including Plots
+
+```{r }
+summary(fullness)
+
+fullness%>%group_by(state,year)%>%dplyr::summarize(meansunspot=mean(value), meanprod=mean(totalprod), meancol=mean(numcol))
+
+fullness%>%arrange(desc(value))%>%filter(year=="2000")%>%dplyr::summarize(meansunspot=mean(value), meancol=mean(numcol))
+
+fullness%>%filter(year=="2008")%>%dplyr::summarize(meansunspot=mean(value), meancol=mean(numcol))
+
+fullness%>%dplyr::summarize(n_distinct(value),n_distinct(numcol))
+
+fullness %>%dplyr::select(value,numcol,yieldpercol,totalprod,stocks,prodvalue) %>%cor()
+fullness%>%dplyr::select(value,numcol,yieldpercol,totalprod,stocks,prodvalue)%>%dplyr::summarize_all(sd)
+
+
+```
+*In order to better understand my dataset, I ran multiple summary statistics on my target variables. I first grouped my data by state and year to than summarize the correlating mean values for number of sunspots, number of colonies, and amount of honey produced. Looking through these values for each state by every year, there was no visible relationship, as  the increase in one value was not always indicative and a coinciding increase in the other variable values. To further test this I selected the year in which the number of sunspots was the highest (2000)and the year in which the number of sunspots was the lowest(2008). I then compared the values of the number of colonies and found that the year of  lowest sunspots had a lower number of bee colonies 56731 then the year with the highest sunspots (60558).*
+
+*To truly get an understanding of the relationship between my target variables, I ran a correlation test. While many of the variables that came from the honey production dataset (number of colonies, amount of honey produce, yield per colony) had a high correlation, the number of sunspots didn’t correlate to any of these variables. In fact, the correlation for the number of sunspots and the number of colonies was -.0027. The best correlation out of the bunch with the number of sunspots was with the amount of honey produced per colony at .1374.*
+```{r cars}
+
+full=fullness%>%group_by(state,year)%>% dplyr::mutate(meansunspot=mean(value))
+
+
+heat=full%>%select(-value)%>% distinct()
+heat%>%head()
+```
+*After looking at my variables and analyzing the summary statistics, I  created a new column (throught mutate) called meansunspot by first grouping by state and year. This allowed me to then average the value column in order to get the approximate number of sunspots per year based on the average of all the months in that year. I then deleted the value column, that represented the sunspots per month, and finished by selecting only the distinct rows. I saved all my changes into a new dataset(heat) which will better represent the data and the relationship between the number of sunspots and beecolonies/honey production over the years. I specifically made these changes because the vast number of data from the sunspots ( number per month for every year) wasn't necessarily matching up to the honeyproduction dataset (number per year). This allowed to decrease the amount of extroplation and better understand the data overall.  *
+
+
+You can also embed plots, for example:
+
+```{r pressure}
+ggplot(heat, aes(meansunspot,numcol))+geom_line(aes(color = state))+theme(legend.position="none")+ylab("Number of Bee Colonies")+xlab("Number of Sunspots")+ggtitle("Relationship between the number of sunspots and bee colonies in the U.S.")
+```
+*From graphing the number of Sunspots versus the number of bee colonies in the 50 different states, it can be concluded that there is no relationship between the two varibles.Each line (state) has a very different trend and seems to change sporadically without any specific pattern. This was expected after looking at the correlation between the two variables which was -.0027. *
+
+```{r true}
+
+ 
+ 
+ ggplot(heat, aes(year))+  geom_bar(aes(y=meansunspot,fill=state), stat="summary")+  theme(legend.position="none")+ggtitle("Number of Sunspots per Year in the U.S.") + ylab("Number of Sunspots") + xlab("Year")
+ 
+ 
+ ggplot(heat, aes(year))+  geom_bar(aes(y=yieldpercol,fill=state), stat="summary")+  theme(legend.position="none")+ggtitle("Amount of Honey yielded per colony per Year in the U.S.") + ylab("Amount of honey Yielded per colony (lb)") + xlab("Year")
+ 
+
+
+
+
+
+                     
+```
+*To compare the amount of honey yeilded per colony to the amount of sunspots per year, two seperate bar graphs were created. I used two seperate graphs to better organize the data since putting them both on one graph resulted in a highly scatterd and unreadable graph. It is apparent from the years vs. number of sunspots that the number of sunspots is at its peak around 2000 and is at its lowest between the years of 2005 to 2010. When looking at the years versus honey yielded per colony it can bee seen that the amount of honey yeilded is pretty constant with a very slight decline over the years. When comparing the two on their mutual timeline, we can see that there is no true correlation between the two, as each graph appears to be independent of one another.*
+
+```{r new}
+
+het3=fullness%>%dplyr::select_if(is.numeric)%>%scale
+rownames(het3)<-fullness$state
+bees<-princomp(het3)
+summary(bees, loadings=T)
+eigval<-bees$sdev^2
+round(cumsum(eigval)/sum(eigval),2)
+eigval
+eigen(cor(het3))
+ggplot()+geom_point(aes(bees$scores[,1], bees$scores[,2]))+xlab("PC1")+ylab("PC2")
+
+```
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

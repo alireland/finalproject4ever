@@ -1,0 +1,15 @@
+---
+title: About Me
+author: Alicia Ireland
+date: '2019-12-15'
+slug: resume
+categories: []
+tags: []
+description: ''
+---
+*Hello and welcome to my webpage where you will see some of my high tech computational skills. I am currently a Junior at the University of Texas and am working towards earning a degree in biochemistry. With the plethora of opportunities available at UT,I have filled my past three years here with research, volunteering, and personal growth. *
+![](/./resume_files/20181011004210_563_mascotOrig.png)
+*I currently work at a pediatric physical therapy office where I assist the lead physical therapists with treating children who either have some sort of physical injury or functional disability. It's always the best part when I get to see my kiddos and help them get stronger.*
+![](/./resume_files/pediatricTherapy7995.jpg)
+*When I'm not working or in class, I'm either out skateboarding or rock climbing. As they say, aways shreddin' the gnar!*
+![](/./resume_files/picture1.png)

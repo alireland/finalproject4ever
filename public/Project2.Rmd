@@ -1,0 +1,200 @@
+---
+title: " Willingness to Pay for the Preservation of the Kakadu National Park"
+author: "Alicia Ireland (ani324)"
+date: "11/24/2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+*I chose the Willingness to Pay for the Preservation of the Kakadu National Park dataset which is from a a survey collected in australia about locals and their opinions on forest conservation. The varibales I chose to analyze include basic demographic information such as age,income,and years of schooling. I was interested in how these demographics would effect/relate to the response varibales such as wildlife (believe it's important to have places where wildlife is preserved),moreparks (there should be more national parks created from state forests),aboriginal(in deciding how to use areas such as Kakadu national park, their importance to the local aboriginal people should be a major factor) and jobs (jobs are the most important thing in deciding how to use our natural resources). Each of these response variables were rated on a numeric scale from one to five with 1 being dont agree and 5 being strongly agree. Furthermore, my two binary variables, scaled on a yes/no rating, were conservation (if the respondent is member of a conservation organization) and envcon (if the respondent participates in an environmentally friendly lifestlye).*
+```{r setup, include=FALSE}
+
+library(dplyr) 
+library(tidyverse)
+library(tidyr)
+forest=read.csv("Kakadu.csv")
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+## Including Plots
+
+```{r }
+forest$jobs <- as.factor(forest$jobs)
+man1<-manova(cbind(wildlife,moreparks)~answer, data=forest)
+summary(man1)
+summary.aov(man1)
+ pairwise.t.test(forest$wildlife,forest$answer,p.adj="none")
+ pairwise.t.test(forest$moreparks,forest$answer,p.adj="none")
+(.05/9)
+ 1-.95^9 
+ 
+ covmats<-forest%>%group_by(answer)%>%do(covs=cov(.[2:3]))
+for(i in 1:3){print(covmats$covs[i])}
+ 
+ ggplot(forest, aes(x = wildlife, y = moreparks)) +
+  geom_point(alpha = .5) + geom_density_2d(h=2) + coord_fixed() + facet_wrap(~answer)
+```
+*Overall I performed 1 MANOVA, 2 ANOVAs, and 6 t tests (9 total test) making the probability that there is at least one type I error if  left unadjusted is .37. To correct this, the significance level was adjusted to .0056 using the bonferroni correction (.05/9). A one-way multivariate analysis of variance (MANOVA) was conducted to determine the effect of the respondents willingness to preserve the park (nn,yy,ny) on the two dependent variables (wildlife and moreparks). Significant differences were found among the three answers on the two dependent measures (Pillae trace= .16,F(4,3648)= 77.246, p<.001). To followup the MANOVA, two Univariate analyses of variance (ANOVAs) for each dependent variable were conducted using the Bonferroni method. The univariate ANOVAs for Wildlife and moreparks were also significant, F(2,40)=50.36, p<.001 , and F(2,370),p<.001, respectively.Post hoc analysis was performed conducting pairwise comparisons to determine which answer differed in wildlife and moreparks.After adjusting for multiple comparisons (bonferroni), all three response answers were found to differ significantly from each other in terms of wildlife and moreparks except for the ny and yy repsonse groups in terms of wildlife (p=.039) . Howere when considering the assumptions, a MANOA test was not consideres to be an appropraite analysis technique. Examination of bivariate density plots for each group revealed that there are deparures from multivariate normality. Additionally,further examination of covariance matricies for each group revealed that the homogeneity of within-group covariance matrices expectation was also not met. *
+
+```{r cars}
+forest%>%dplyr::group_by(conservation)%>%
+ dplyr:: summarize(means=mean(income))%>%dplyr::summarize("mean_diff:"=diff(means))
+rand_dist<-vector()
+for(i in 1:5000){
+newz<-data.frame(income=sample(forest$income),conservation=forest$conservation)
+rand_dist[i]<-mean(newz[newz$conservation=="yes",]$income)-
+              mean(newz[newz$conservation=="no",]$income)}
+mean(rand_dist>6.47)*2
+
+
+{hist(rand_dist,main="",ylab=""); abline(v = 6.47,col="red")}
+ t.test(data=forest,income~conservation)
+ 
+```
+*The null hypothesis is that the mean income is the same for respondents that are active conservationist vs.those who are non active consevationist. Thus, the alterante hypothesis is that the mean income is different for those who are active conservationist vs. non-active consevationist. After performing the randomization test, it was found that there is 0 probability of observing a mean difference as extreme as the one we got under the randomization distributions.*
+
+
+You can also embed plots, for example:
+
+```{r pressur}
+forest$school_c= forest$schooling-mean(forest$schooling)
+fitz<-lm(income ~ answer * moreparks, data=forest)
+summary(fitz)
+resids<-fitz$residuals; fitvals<-fitz$fitted.values
+ggplot()+geom_point(aes(fitvals,resids))+geom_hline(yintercept=0, col="red")
+ ggplot()+geom_histogram(aes(resids),bins=20)
+ ggplot()+geom_qq(aes(sample=resids))+geom_qq_line(aes(sample=resids),color='red')
+ summary(fitz)$coef[,1:2]
+ library(lmtest)
+ library(sandwich)
+coeftest(fitz, vcov=vcovHC(fitz))[,1:2]
+ (sum((forest$income-mean(forest$income))^2)-sum(fitz$residuals^2))/sum((forest$income-mean(forest$income))^2)
+fit2<-lm(income ~ answer + moreparks, data=forest)
+summary(fit2)
+qplot(x = moreparks, y = income, color = answer, data = forest) +
+  stat_smooth(method = "lm", se = FALSE, fullrange = TRUE)
+
+ anova(fitz,fit2,test="LRT")
+```
+*Interperting the coefficient estimates it is seen that respondents who answered maybe(ny) in willingness to donate tended to have a lower income(b1=-5.8) than those who answered yes(yy)(b2=-2.4). Furthermore the people who were not willing to donate but greater supported that there should be more national parks created from state forests tended to have a lower income (b3=-1.3). However those who answere ny or yy to willingness to donate and who also agreed strongly that theire shoule be more parks tended to have a higher income (b4=1.2 and b5=1.3).However, when checking  assumptions of linearity, normality, and homoskedasticity  it is evident from the graph that these expectations are not met. When further recomputing the  regression results with robust standard errors the significance did not change and their was only a slight increase in the std. errors overall. .0096 of the variation in the outcome is explain by the model. Additionally,When rerunning the regression  without interactions and comparing it with the interaction model using a likelihood ratio test it is apparent that the smaller residual deviance of the interaction model is better.*
+
+```{r pressuree}
+samp_distn<-replicate(5000, {
+  boot_dat<-boot_dat<-forest[sample(nrow(forest),replace=TRUE),]
+  fit<-lm(income ~ answer * moreparks, data=boot_dat)
+  coef(fit)
+})
+samp_distn%>%t%>%as.data.frame%>%summarize_all(sd)
+
+```
+*Compared to the original SEs and the robust SEs,the bootstrapped SEs for all the variables were about the same.Overall the bootstrapped SE's tended to be slighlty lower than the robust SE's and slightly higher than the original SE's.*
+
+
+```{r pre}
+forest1=forest %>% dplyr::mutate(envcon = ifelse(envcon == "no",0,1))
+forest1$income_c= forest1$income-mean(forest$income)
+forest1$age_c= forest1$age-mean(forest1$age)
+fit4<-glm(envcon ~ age_c + income_c,data=forest1,family="binomial")
+summary(fit4)
+
+forest1$logit<-predict(fit4) #get predicted log-odds
+forest1$envcon<-factor(forest$envcon,levels=c("yes","no"))
+library(ggplot2)
+library(MASS)
+head(forest1)
+ggplot(forest1,aes(logit, fill=envcon))+geom_density(alpha=.3)+geom_vline(xintercept=0,lty=2)
+ 
+
+
+prob<-predict(fit4,type="response") #get predictions for every student in the dataset
+pred<-ifelse(prob>.5,1,0)
+table(truth=forest1$envcon, prediction=pred)%>%addmargins
+(201+838)/1827 #accuracy
+838/1469 #sensitivity
+201/358 #specicifity
+838/995#PPV
+library(plotROC)
+ROCplot<-ggplot(forest1)+geom_roc(aes(d=envcon,m=prob), n.cuts=0)+geom_segment(aes(x=0,xend=1,y=0,yend=1),lty=2)
+ROCplot
+calc_auc(ROCplot)
+class_diag<-function(probs,truth){
+  tab<-table(factor(probs>.5,levels=c("FALSE","TRUE")),truth)
+  acc=sum(diag(tab))/sum(tab)
+  sens=tab[2,2]/colSums(tab)[2]
+  spec=tab[1,1]/colSums(tab)[1]
+  ppv=tab[2,2]/rowSums(tab)[2]
+  if(is.numeric(truth)==FALSE & is.logical(truth)==FALSE) truth<-as.numeric(truth)-1
+  #CALCULATE EXACT AUC
+  ord<-order(probs, decreasing=TRUE)
+  probs <- probs[ord]; truth <- truth[ord]
+  TPR=cumsum(truth)/max(1,sum(truth))
+  FPR=cumsum(!truth)/max(1,sum(!truth))
+  dup<-c(probs[-1]>=probs[-length(probs)], FALSE)
+  TPR<-c(0,TPR[!dup],1); FPR<-c(0,FPR[!dup],1)
+  n <- length(TPR)
+  auc<- sum( ((TPR[-1]+TPR[-n])/2) * (FPR[-1]-FPR[-n]) )
+  data.frame(acc,sens,spec,ppv,auc)
+}
+
+set.seed(1234)
+k=10 
+data1<-forest1[sample(nrow(forest1)),] 
+folds<-cut(seq(1:nrow(forest1)),breaks=k,labels=F) 
+diags<-NULL
+for(i in 1:k){
+
+  forest<-data1[folds!=i,]
+  test<-data1[folds==i,]
+  truth<-test$envcon
+ 
+  fit5<-glm(envcon~age_c+ income_c,data=forest1,family="binomial")
+  probs<-predict(fit5,newdata = test,type="response")
+
+  diags<-rbind(diags,class_diag(probs,truth))
+}
+
+apply(diags,2,mean)
+exp(.1800990)
+exp(-0.0065205 )
+exp( 0.0065917)
+```
+*When interpreting coefficient estimates in context it is seen that the intercept of 1.18 is the odds of being a conservationist if the individual has the average income and the average age. Furthermore a 1 year increase in age increases odds by .9935 when controlling for income.When controlling for aage, +1,000$ in income increases odds by 1.007.From the confusion matrix of the logistic regression the following were calculated, the Accuracy (.57), the Sensitivity or the probability of  correcty detecting that the respondent is a conservationist  (.57), Specificity or the probability of correctly identyfying that they are not a conservationist (.56), and the Recall or the proportion as those classified as conservationist who actually are(.84). Additionally, from the generated  ROC curve and calculated AUC (.57) which is bad which indicates that it is hard to predict if someone is an environmental conservative ffrom their age and income.From the 10-fold  CV and report the accuracy was .62, the sensitivity was .74, and the recall was .633.*
+
+```{r newt}
+
+library(glmnet)
+y<-as.matrix(forest$envcon)
+x<-forest%>%dplyr::select(-vparks,-answer,-conservation,-sex,-envcon,-jobs,-major,-envcon)%>%mutate_all(scale)%>%as.matrix
+cv<-cv.glmnet(x,y,family="binomial")
+
+
+lasso1<-glmnet(x,y,family="binomial",lambda=cv$lambda.1se)
+coef(lasso1)
+
+set.seed(1234)
+data1<-forest1[sample(nrow(forest1)),]
+folds<-cut(seq(1:nrow(forest1)),breaks=k,labels=F)
+diags<-NULL
+for(i in 1:k){
+  train<-data1[folds!=i,]
+  test<-data1[folds==i,]
+  truth<-test$envcon
+  fit<-glm(envcon~upper+schooling+aboriginal,data=forest1,family="binomial")
+  probs<-predict(fit,newdata = test,type="response")
+  preds<-ifelse(probs>.5,1,0)
+  diags<-rbind(diags,class_diag(probs,truth))
+}
+diags%>%summarize_all(mean)
+
+```
+
+*When running a LASSO regression and inputting all the  variables as predictors, the variables are retained were the most important predictors of envcon which were upper, schooling, and aboriginal. After the performing a 10-fold CV using the same model, the  accuracy was calculated to be .62 and auc  was. 65 which were both improvements from the previous logistic regression test.*
+
